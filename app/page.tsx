@@ -2,64 +2,259 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <main className="pagina">
+
+      {/* NAVBAR */}
+      <header className="navbar">
+
+        <div className="logo">
+          <img src="/logop.png" alt="lumio" />
+        </div>
+
+        <nav className="nav-menu">
+          <a className="nav-link">Início</a>
+          <a className="nav-link">Cursos</a>
+          <a className="nav-link">Como funciona</a>
+          <a className="nav-link">Planos</a>
+          <a className="nav-link">Sobre</a>
+        </nav>
+
+        <div className="buttons">
+          <button className="btn-navbar">Criar conta</button>
+          <button className="btn-navbar">Entrar</button>
+        </div>
+
+      </header>
+
+
+      {/* HERO */}
+      <section className="hero">
+
+        <div className="left">
+
+          <div className="linha"></div>
+
+          <h1 className="hero-title">
+            Os melhores cursos <br />
+            para impulsionar a{" "}
+            <span className="hero-highlight">
+              sua carreira.
+            </span>
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+
+          <p className="hero-text">
+            Organize seus cursos, acompanhe seu progresso
+            e explore trilhas de conhecimento feitas
+            para te levar mais longe.
           </p>
+
+
+          <div className="cards">
+
+            <div className="card">
+              <div className="icon">
+                <Image
+                  src="/curso.png"
+                  alt="curso"
+                  width={40}
+                  height={40}
+                />
+              </div>
+              <span className="texto-card">
+                Cursos organizados
+              </span>
+            </div>
+
+            <div className="card">
+              <div className="icon">
+                <Image
+                  src="/progresso.png"
+                  alt="progresso"
+                  width={40}
+                  height={40}
+                />
+              </div>
+              <span className="texto-card">
+                Acompanhamento de progresso
+              </span>
+            </div>
+
+            <div className="card">
+              <div className="icon">
+                <Image
+                  src="/trilha.png"
+                  alt="trilha"
+                  width={40}
+                  height={40}
+                />
+              </div>
+              <span className="texto-card">
+                Trilhas de aprendizado
+              </span>
+            </div>
+
+          </div>
+
+
+          <button className="cta">
+            COMECE AGORA
+            <img src="/arrow.png" alt="arrow" />
+          </button>
+
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+
+
+        <div className="imagem">
+          <Image
+            src="/foguete.png"
+            alt="foguete"
+            width={350}
+            height={350}
+          />
+        </div>
+
+      </section>
+
+
+      {/* FOOTER */}
+      <footer className="footer">
+
+        <Image
+          className="footer-logo"
+          src="/logo.png"
+          alt="logo"
+          width={180}
+          height={60}
+        />
+
+        <Image
+          className="footer-logo"
+          src="/logo.png"
+          alt="logo"
+          width={180}
+          height={60}
+        />
+
+        <Image
+          className="footer-logo"
+          src="/logo.png"
+          alt="logo"
+          width={180}
+          height={60}
+        />
+
+        <Image
+          className="footer-logo"
+          src="/logo.png"
+          alt="logo"
+          width={180}
+          height={60}
+        />
+
+      </footer>
+
+
+      {/* TECNOLOGIA */}
+      <section className="tecnologia">
+
+        <h2 className="tec-title">
+          Transformando seu futuro com tecnologia.
+        </h2>
+
+        <div className="tec-content">
+
+          <div className="tec-left">
+
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+              src="/robo.png"
+              alt="robo"
+              width={500}
+              height={500}
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+            <div className="numeros">
+
+              <div className="numero-box">
+                <h3 className="numero-title">3K</h3>
+                <p className="numero-text">Projetos</p>
+                <Image
+                  src="/projeto-icon.png"
+                  alt="projeto"
+                  width={70}
+                  height={70}
+                />
+              </div>
+
+              <div className="numero-box">
+                <h3 className="numero-title">+200</h3>
+                <p className="numero-text">Alunos</p>
+                <Image
+                  src="/aluno-icon.png"
+                  alt="aluno"
+                  width={70}
+                  height={70}
+                />
+              </div>
+
+              <div className="numero-box">
+                <h3 className="numero-title">+350</h3>
+                <p className="numero-text">Certificados</p>
+                <Image
+                  src="/certificado-icon.png"
+                  alt="certificado"
+                  width={70}
+                  height={70}
+                />
+              </div>
+
+            </div>
+          </div>
+
+
+          <div className="tec-right">
+
+            <p className="tec-text">
+              Na Lumio, você aprende programação,
+              design e tecnologia através de
+              projetos práticos, desafios
+              inteligentes e experiências
+              voltadas para o mercado.
+            </p>
+
+            <div className="barra">
+              <h4 className="barra-title">
+                Trilhas Front-End
+              </h4>
+              <div className="linha-barra">
+                <div className="fill w90"></div>
+              </div>
+            </div>
+
+            <div className="barra">
+              <h4 className="barra-title">
+                Projetos Práticos
+              </h4>
+              <div className="linha-barra">
+                <div className="fill w80"></div>
+              </div>
+            </div>
+
+            <div className="barra">
+              <h4 className="barra-title">
+                Carreiras Tech
+              </h4>
+              <div className="linha-barra">
+                <div className="fill w85"></div>
+              </div>
+            </div>
+
+            <button className="btn-trilhas">
+              Trilhas
+            </button>
+
+          </div>
         </div>
-      </main>
-    </div>
+      </section>
+    </main>
   );
 }
