@@ -255,6 +255,110 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* ÁREAS */}
+<section className="areas">
+
+  <h2 className="areas-title">
+    Áreas de conhecimento
+  </h2>
+
+
+  {/* FRONT */}
+  <div className="area-card">
+
+    <div className="area-top">
+
+      <Image
+        src="/frontend-icon.png"
+        alt="frontend"
+        width={45}
+        height={45}
+      />
+
+      <h3 className="area-card-title">
+        Front End
+      </h3>
+
+    </div>
+
+    <p className="area-card-text">
+      Aprenda a desenvolver interfaces modernas,
+      responsivas e interativas utilizando HTML,
+      CSS, JavaScript e React para criar
+      experiências digitais de alto impacto.
+    </p>
+
+    <button className="area-btn">
+      Conheça mais
+    </button>
+
+  </div>
+
+
+  {/* BACK */}
+  <div className="area-card">
+
+    <div className="area-top">
+
+      <Image
+        src="/backend-icon.png"
+        alt="backend"
+        width={45}
+        height={45}
+      />
+
+      <h3 className="area-card-title">
+        Back End
+      </h3>
+
+    </div>
+
+    <p className="area-card-text">
+      Construa a estrutura por trás das aplicações
+      desenvolvendo APIs, servidores e bancos de
+      dados com foco em performance, segurança
+      e escalabilidade.
+    </p>
+
+    <button className="area-btn">
+      Conheça mais
+    </button>
+
+  </div>
+
+
+  {/* DESIGN */}
+  <div className="area-card">
+
+    <div className="area-top">
+
+      <Image
+        src="/design-icon.png"
+        alt="design"
+        width={45}
+        height={45}
+      />
+
+      <h3 className="area-card-title">
+        UI/UX Design
+      </h3>
+
+    </div>
+
+    <p className="area-card-text">
+      Projete interfaces funcionais e experiências
+      intuitivas, aplicando princípios de design,
+      prototipação e usabilidade para criar
+      produtos digitais centrados no usuário.
+    </p>
+
+    <button className="area-btn">
+      Conheça mais
+    </button>
+
+  </div>
+
+</section>
     </main>
   );
 }
