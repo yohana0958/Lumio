@@ -708,9 +708,75 @@ export default function Home() {
 
         </div>
 
-      </section>
-    </main>
-    
+           </section>
 
+      {/* FOOTER BEATRIZ */}
+      <footer className="bea-footer">
+
+        <div className="bea-footer-container">
+
+          <div className="bea-footer-logo">
+
+            <img
+              src="/logolumio.png"
+              alt="Lumio"
+              className="bea-footer-img"
+            />
+
+            <p>
+              A plataforma que transforma
+              estudantes em profissionais.
+            </p>
+
+          </div>
+
+          <div className="bea-footer-links">
+
+            <div className="bea-footer-coluna">
+
+              <h3>Plataforma</h3>
+
+              <a href="#">Cursos</a>
+              <a href="#">Trilhas</a>
+              <a href="#">Projetos</a>
+              <a href="#">Comunidade</a>
+
+            </div>
+
+            <div className="bea-footer-coluna">
+
+              <h3>Suporte</h3>
+
+              <a href="#">Central de ajuda</a>
+              <a href="#">Contato</a>
+              <a href="#">FAQ</a>
+
+            </div>
+
+            <div className="bea-footer-coluna">
+
+              <h3>Legal</h3>
+
+              <a href="#">Termos de uso</a>
+              <a href="#">Política de privacidade</a>
+              <a href="#">Política de cookies</a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div className="bea-footer-copy">
+
+          <p>
+            Aprenda. Crie. Evolua.
+          </p>
+
+        </div>
+
+      </footer>
+
+    </main>
   );
 }

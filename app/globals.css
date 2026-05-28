@@ -454,4 +454,171 @@ body{
         grid-template-columns: 1fr;
     }
 
+  }
+ /* =========================
+   FOOTER DA BEA
+========================= */
+
+.bea-footer{
+    width: 100%;
+    background-color: #020b2d;
+
+    padding: 60px 80px 30px;
+
+    margin-top: 80px;
+
+    color: white;
+}
+
+.bea-footer-container{
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    flex-wrap: wrap;
+
+    gap: 60px;
+}
+
+.bea-footer-logo{
+    max-width: 300px;
+}
+
+.bea-footer-logo h1{
+    font-size: 48px;
+
+    margin-bottom: 15px;
+}
+
+.bea-footer-logo p{
+    color: #d1d1d1;
+
+    line-height: 1.6;
+}
+
+.bea-footer-links{
+    display: flex;
+
+    gap: 80px;
+
+    flex-wrap: wrap;
+}
+
+.bea-footer-coluna{
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+.bea-footer-coluna h3{
+    font-size: 20px;
+
+    margin-bottom: 10px;
+
+    color: white;
+}
+
+.bea-footer-coluna a{
+    color: #cfcfcf;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.bea-footer-coluna a:hover{
+    color: #8b5cf6;
+}
+
+.bea-footer-copy{
+    width: 100%;
+
+    text-align: center;
+
+    margin-top: 50px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid rgba(255,255,255,0.1);
+
+    color: #bdbdbd;
+}
+
+.bea-footer *{
+    box-sizing: border-box;
+}
+
+.bea-footer{
+    width: 100%;
+    background: #020b2d;
+    padding: 70px 90px 30px;
+    border-top: 3px solid #d100ff;
+}
+
+.bea-footer-container{
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+
+    flex-wrap: wrap;
+}
+
+.bea-footer-logo{
+    max-width: 240px;
+}
+
+.bea-footer-img{
+    width: 160px;
+    margin-bottom: 20px;
+}
+
+.bea-footer-logo p{
+    color: #d9d9d9;
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+.bea-footer-links{
+    display: flex;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+.bea-footer-coluna{
+    display: flex;
+    flex-direction: column;
+}
+
+.bea-footer-coluna h3{
+    color: white;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.bea-footer-coluna a{
+    color: #bcbcbc;
+    text-decoration: none;
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+.bea-footer-coluna a:hover{
+    color: #d100ff;
+}
+
+.bea-footer-copy{
+    text-align: center;
+    margin-top: 60px;
+}
+
+.bea-footer-copy p{
+    color: white;
+    font-size: 15px;
 }
