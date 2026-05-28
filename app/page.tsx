@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
         </div>
 
         <nav className="nav-menu">
-          <a className="nav-link"> Início</a>
+          <a className="nav-link">Início</a>
           <a className="nav-link">Cursos</a>
           <a className="nav-link">Como funciona</a>
           <a className="nav-link">Planos</a>
@@ -20,8 +21,12 @@ export default function Home() {
         </nav>
 
         <div className="buttons">
-          <button className="btn-navbar">Criar conta</button>
-          <button className="btn-navbar">Entrar</button>
+          <Link href="/cadastro" className="btn-navbar">Criar conta
+          </Link>
+          <Link href="/login" className="btn-navbar">
+            Entrar
+          </Link>
+
         </div>
 
       </header>
