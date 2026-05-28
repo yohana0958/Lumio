@@ -12,7 +12,7 @@ export default function Home() {
         </div>
 
         <nav className="nav-menu">
-          <a className="nav-link">Início</a>
+          <a className="nav-link"> Início</a>
           <a className="nav-link">Cursos</a>
           <a className="nav-link">Como funciona</a>
           <a className="nav-link">Planos</a>
