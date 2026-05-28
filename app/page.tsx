@@ -260,7 +260,7 @@ export default function Home() {
 
 
 
-      {/* PROJETOS MAVY */}
+      /* PROJETOS MAVY */}
       <section className="mavy-projetos-section">
 
         <h2 className="mavy-projetos-title">
