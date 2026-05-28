@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
         </div>
 
         <nav className="nav-menu">
-          <a className="nav-link"> Início</a>
+          <a className="nav-link">Início</a>
           <a className="nav-link">Cursos</a>
           <a className="nav-link">Como funciona</a>
           <a className="nav-link">Planos</a>
@@ -60,10 +61,12 @@ export default function Home() {
                   height={40}
                 />
               </div>
+
               <span className="texto-card">
                 Cursos organizados
               </span>
             </div>
+
 
             <div className="card">
               <div className="icon">
@@ -74,10 +77,12 @@ export default function Home() {
                   height={40}
                 />
               </div>
+
               <span className="texto-card">
                 Acompanhamento de progresso
               </span>
             </div>
+
 
             <div className="card">
               <div className="icon">
@@ -88,6 +93,7 @@ export default function Home() {
                   height={40}
                 />
               </div>
+
               <span className="texto-card">
                 Trilhas de aprendizado
               </span>
@@ -176,7 +182,11 @@ export default function Home() {
 
               <div className="numero-box">
                 <h3 className="numero-title">3K</h3>
-                <p className="numero-text">Projetos</p>
+
+                <p className="numero-text">
+                  Projetos
+                </p>
+
                 <Image
                   src="/projeto-icon.png"
                   alt="projeto"
@@ -185,9 +195,14 @@ export default function Home() {
                 />
               </div>
 
+
               <div className="numero-box">
                 <h3 className="numero-title">+200</h3>
-                <p className="numero-text">Alunos</p>
+
+                <p className="numero-text">
+                  Alunos
+                </p>
+
                 <Image
                   src="/aluno-icon.png"
                   alt="aluno"
@@ -196,9 +211,14 @@ export default function Home() {
                 />
               </div>
 
+
               <div className="numero-box">
                 <h3 className="numero-title">+350</h3>
-                <p className="numero-text">Certificados</p>
+
+                <p className="numero-text">
+                  Certificados
+                </p>
+
                 <Image
                   src="/certificado-icon.png"
                   alt="certificado"
@@ -222,142 +242,163 @@ export default function Home() {
             </p>
 
             <div className="barra">
+
               <h4 className="barra-title">
                 Trilhas Front-End
               </h4>
+
               <div className="linha-barra">
                 <div className="fill w90"></div>
               </div>
+
             </div>
 
+
             <div className="barra">
+
               <h4 className="barra-title">
                 Projetos Práticos
               </h4>
+
               <div className="linha-barra">
                 <div className="fill w80"></div>
               </div>
+
             </div>
 
+
             <div className="barra">
+
               <h4 className="barra-title">
                 Carreiras Tech
               </h4>
+
               <div className="linha-barra">
                 <div className="fill w85"></div>
               </div>
+
             </div>
 
-            <button className="btn-trilhas">
-              Trilhas
-            </button>
+            <Link href="/Trilhas">
 
+              <button className="btn-trilhas">
+                Trilhas
+              </button>
+
+            </Link>
           </div>
         </div>
       </section>
+
+
       {/* ÁREAS */}
-<section className="areas">
+      <section className="areas">
 
-  <h2 className="areas-title">
-    Áreas de conhecimento
-  </h2>
-
-
-  {/* FRONT */}
-  <div className="area-card">
-
-    <div className="area-top">
-
-      <Image
-        src="/frontend-icon.png"
-        alt="frontend"
-        width={45}
-        height={45}
-      />
-
-      <h3 className="area-card-title">
-        Front End
-      </h3>
-
-    </div>
-
-    <p className="area-card-text">
-      Aprenda a desenvolver interfaces modernas,
-      responsivas e interativas utilizando HTML,
-      CSS, JavaScript e React para criar
-      experiências digitais de alto impacto.
-    </p>
-
-    <button className="area-btn">
-      Conheça mais
-    </button>
-
-  </div>
+        <h2 className="areas-title">
+          Áreas de conhecimento
+        </h2>
 
 
-  {/* BACK */}
-  <div className="area-card">
+        {/* FRONT */}
+        <div className="area-card">
 
-    <div className="area-top">
+          <div className="area-top">
 
-      <Image
-        src="/backend-icon.png"
-        alt="backend"
-        width={45}
-        height={45}
-      />
+            <Image
+              src="/frontend-icon.png"
+              alt="frontend"
+              width={45}
+              height={45}
+            />
 
-      <h3 className="area-card-title">
-        Back End
-      </h3>
+            <h3 className="area-card-title">
+              Front End
+            </h3>
 
-    </div>
+          </div>
 
-    <p className="area-card-text">
-      Construa a estrutura por trás das aplicações
-      desenvolvendo APIs, servidores e bancos de
-      dados com foco em performance, segurança
-      e escalabilidade.
-    </p>
+          <p className="area-card-text">
+            Aprenda a desenvolver interfaces modernas,
+            responsivas e interativas utilizando HTML,
+            CSS, JavaScript e React para criar
+            experiências digitais de alto impacto.
+          </p>
 
-    <button className="area-btn">
-      Conheça mais
-    </button>
+          <button className="area-btn">
+            Conheça mais
+          </button>
 
-  </div>
+        </div>
 
 
-  {/* DESIGN */}
-  <div className="area-card">
+        {/* BACK */}
+        <div className="area-card">
 
-    <div className="area-top">
+          <div className="area-top">
 
-      <Image
-        src="/design-icon.png"
-        alt="design"
-        width={45}
-        height={45}
-      />
+            <Image
+              src="/backend-icon.png"
+              alt="backend"
+              width={45}
+              height={45}
+            />
 
-      <h3 className="area-card-title">
-        UI/UX Design
-      </h3>
+            <h3 className="area-card-title">
+              Back End
+            </h3>
 
-    </div>
+          </div>
 
-    <p className="area-card-text">
-      Projete interfaces funcionais e experiências
-      intuitivas, aplicando princípios de design,
-      prototipação e usabilidade para criar
-      produtos digitais centrados no usuário.
-    </p>
+          <p className="area-card-text">
+            Construa a estrutura por trás das aplicações
+            desenvolvendo APIs, servidores e bancos de
+            dados com foco em performance, segurança
+            e escalabilidade.
+          </p>
 
-    <button className="area-btn">
-      Conheça mais
-    </button>
+          <button className="area-btn">
+            Conheça mais
+          </button>
 
-  </div>
-  <section className="mavy-projetos-section">
+        </div>
+
+
+        {/* DESIGN */}
+        <div className="area-card">
+
+          <div className="area-top">
+
+            <Image
+              src="/design-icon.png"
+              alt="design"
+              width={45}
+              height={45}
+            />
+
+            <h3 className="area-card-title">
+              UI/UX Design
+            </h3>
+
+          </div>
+
+          <p className="area-card-text">
+            Projete interfaces funcionais e experiências
+            intuitivas, aplicando princípios de design,
+            prototipação e usabilidade para criar
+            produtos digitais centrados no usuário.
+          </p>
+
+          <button className="area-btn">
+            Conheça mais
+          </button>
+
+        </div>
+
+      </section>
+
+
+      {/* PROJETOS MAVY */}
+      <section className="mavy-projetos-section">
 
         <h2 className="mavy-projetos-title">
           Projetos que Geram Resultados
@@ -533,184 +574,6 @@ export default function Home() {
 
       </section>
 
-</section>
- <section className="mavy-projetos-section">
-
-        <h2 className="mavy-projetos-title">
-          Projetos que Geram Resultados
-        </h2>
-
-        <p className="mavy-projetos-subtitle">
-          Projetos reais desenvolvidos para colocar em prática
-          os conhecimentos adquiridos.
-        </p>
-
-        <div className="mavy-projetos-grid">
-
-          {/* CARD 1 */}
-          <div className="mavy-projeto-card">
-
-            <Image
-              src="/projeto1.png"
-              alt="Landing Page"
-              width={300}
-              height={180}
-              className="mavy-projeto-imagem"
-            />
-
-            <div className="mavy-projeto-conteudo">
-
-              <span className="mavy-projeto-categoria">
-                Front-End
-              </span>
-
-              <h3 className="mavy-projeto-titulo">
-                Landing Page Moderna
-              </h3>
-
-              <div className="mavy-projeto-rodape">
-
-                <span className="mavy-projeto-link">
-                  Ver projeto
-                </span>
-
-                <Image
-                  src="/arrow.png"
-                  alt="seta"
-                  width={20}
-                  height={20}
-                  className="mavy-projeto-seta"
-                />
-
-              </div>
-            </div>
-          </div>
-
-
-          {/* CARD 2 */}
-          <div className="mavy-projeto-card">
-
-            <Image
-              src="/projeto2.png"
-              alt="Dashboard"
-              width={300}
-              height={180}
-              className="mavy-projeto-imagem"
-            />
-
-            <div className="mavy-projeto-conteudo">
-
-              <span className="mavy-projeto-categoria">
-                UI Design
-              </span>
-
-              <h3 className="mavy-projeto-titulo">
-                Plataforma de Organização
-              </h3>
-
-              <div className="mavy-projeto-rodape">
-
-                <span className="mavy-projeto-link">
-                  Ver projeto
-                </span>
-
-                <Image
-                  src="/arrow.png"
-                  alt="seta"
-                  width={20}
-                  height={20}
-                  className="mavy-projeto-seta"
-                />
-
-              </div>
-            </div>
-          </div>
-
-
-          {/* CARD 3 */}
-          <div className="mavy-projeto-card">
-
-            <Image
-              src="/projeto3.png"
-              alt="Sistema"
-              width={300}
-              height={180}
-              className="mavy-projeto-imagem"
-            />
-
-            <div className="mavy-projeto-conteudo">
-
-              <span className="mavy-projeto-categoria">
-                Back-End
-              </span>
-
-              <h3 className="mavy-projeto-titulo">
-                Sistema Inteligente
-              </h3>
-
-              <div className="mavy-projeto-rodape">
-
-                <span className="mavy-projeto-link">
-                  Ver projeto
-                </span>
-
-                <Image
-                  src="/arrow.png"
-                  alt="seta"
-                  width={20}
-                  height={20}
-                  className="mavy-projeto-seta"
-                />
-
-              </div>
-            </div>
-          </div>
-
-
-          {/* CARD 4 */}
-          <div className="mavy-projeto-card">
-
-            <Image
-              src="/projeto4.png"
-              alt="Delivery"
-              width={300}
-              height={180}
-              className="mavy-projeto-imagem"
-            />
-
-            <div className="mavy-projeto-conteudo">
-
-              <span className="mavy-projeto-categoria">
-                Full Stack
-              </span>
-
-              <h3 className="mavy-projeto-titulo">
-                Plataforma de Delivery
-              </h3>
-
-              <div className="mavy-projeto-rodape">
-
-                <span className="mavy-projeto-link">
-                  Ver projeto
-                </span>
-
-                <Image
-                  src="/arrow.png"
-                  alt="seta"
-                  width={20}
-                  height={20}
-                  className="mavy-projeto-seta"
-                />
-
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </section>
     </main>
-    
-
   );
 }
