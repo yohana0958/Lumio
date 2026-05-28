@@ -256,5 +256,185 @@ export default function Home() {
         </div>
       </section>
     </main>
+    
+
+
+
+      {/* PROJETOS MAVY */}
+      <section className="mavy-projetos-section">
+
+        <h2 className="mavy-projetos-title">
+          Projetos que Geram Resultados
+        </h2>
+
+        <p className="mavy-projetos-subtitle">
+          Projetos reais desenvolvidos para colocar em prática
+          os conhecimentos adquiridos.
+        </p>
+
+        <div className="mavy-projetos-grid">
+
+          {/* CARD 1 */}
+          <div className="mavy-projeto-card">
+
+            <Image
+              src="/projeto1.png"
+              alt="Landing Page"
+              width={300}
+              height={180}
+              className="mavy-projeto-imagem"
+            />
+
+            <div className="mavy-projeto-conteudo">
+
+              <span className="mavy-projeto-categoria">
+                Front-End
+              </span>
+
+              <h3 className="mavy-projeto-titulo">
+                Landing Page Moderna
+              </h3>
+
+              <div className="mavy-projeto-rodape">
+
+                <span className="mavy-projeto-link">
+                  Ver projeto
+                </span>
+
+                <Image
+                  src="/arrow.png"
+                  alt="seta"
+                  width={20}
+                  height={20}
+                  className="mavy-projeto-seta"
+                />
+
+              </div>
+            </div>
+          </div>
+
+
+          {/* CARD 2 */}
+          <div className="mavy-projeto-card">
+
+            <Image
+              src="/projeto2.png"
+              alt="Dashboard"
+              width={300}
+              height={180}
+              className="mavy-projeto-imagem"
+            />
+
+            <div className="mavy-projeto-conteudo">
+
+              <span className="mavy-projeto-categoria">
+                UI Design
+              </span>
+
+              <h3 className="mavy-projeto-titulo">
+                Plataforma de Organização
+              </h3>
+
+              <div className="mavy-projeto-rodape">
+
+                <span className="mavy-projeto-link">
+                  Ver projeto
+                </span>
+
+                <Image
+                  src="/arrow.png"
+                  alt="seta"
+                  width={20}
+                  height={20}
+                  className="mavy-projeto-seta"
+                />
+
+              </div>
+            </div>
+          </div>
+
+
+          {/* CARD 3 */}
+          <div className="mavy-projeto-card">
+
+            <Image
+              src="/projeto3.png"
+              alt="Sistema"
+              width={300}
+              height={180}
+              className="mavy-projeto-imagem"
+            />
+
+            <div className="mavy-projeto-conteudo">
+
+              <span className="mavy-projeto-categoria">
+                Back-End
+              </span>
+
+              <h3 className="mavy-projeto-titulo">
+                Sistema Inteligente
+              </h3>
+
+              <div className="mavy-projeto-rodape">
+
+                <span className="mavy-projeto-link">
+                  Ver projeto
+                </span>
+
+                <Image
+                  src="/arrow.png"
+                  alt="seta"
+                  width={20}
+                  height={20}
+                  className="mavy-projeto-seta"
+                />
+
+              </div>
+            </div>
+          </div>
+
+
+          {/* CARD 4 */}
+          <div className="mavy-projeto-card">
+
+            <Image
+              src="/projeto4.png"
+              alt="Delivery"
+              width={300}
+              height={180}
+              className="mavy-projeto-imagem"
+            />
+
+            <div className="mavy-projeto-conteudo">
+
+              <span className="mavy-projeto-categoria">
+                Full Stack
+              </span>
+
+              <h3 className="mavy-projeto-titulo">
+                Plataforma de Delivery
+              </h3>
+
+              <div className="mavy-projeto-rodape">
+
+                <span className="mavy-projeto-link">
+                  Ver projeto
+                </span>
+
+                <Image
+                  src="/arrow.png"
+                  alt="seta"
+                  width={20}
+                  height={20}
+                  className="mavy-projeto-seta"
+                />
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
   );
 }
