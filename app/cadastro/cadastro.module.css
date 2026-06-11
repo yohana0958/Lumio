@@ -1,0 +1,148 @@
+.container {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-image: url("/fundo.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card {
+  width: 600px;
+
+  padding: 40px;
+
+  border-radius: 24px;
+
+  backdrop-filter: blur(12px);
+
+  background: rgba(255, 255, 255, 0.08);
+
+  border: 1px solid rgba(255, 255, 255, 0.35);
+
+  box-shadow:
+    0 0 20px rgba(255, 0, 255, 0.3),
+    inset 0 0 15px rgba(255, 255, 255, 0.1);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  margin-bottom: 30px;
+}
+
+.form {
+  width: 100%;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 18px;
+}
+
+.inputGroup label {
+  color: white;
+
+  margin-bottom: 6px;
+
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.inputGroup input {
+  height: 42px;
+
+  border-radius: 8px;
+
+  border: 1px solid rgba(255, 255, 255, 0.6);
+
+  background: rgba(255, 255, 255, 0.08);
+
+  outline: none;
+
+  padding: 0 12px;
+
+  color: white;
+
+  font-size: 15px;
+
+  transition: 0.3s;
+}
+
+.inputGroup input:focus {
+  border: 1px solid #d26bff;
+
+  box-shadow: 0 0 10px rgba(210, 107, 255, 0.6);
+}
+
+.button {
+  width: 100%;
+
+  height: 46px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: linear-gradient(
+    90deg,
+    #c53dff,
+    #9f2fff
+  );
+
+  color: white;
+
+  font-size: 18px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  margin-top: 2px;
+
+  transition: 0.3s;
+}
+
+.button:hover {
+  transform: scale(1.02);
+
+  opacity: 0.9;
+}
+
+.terms {
+  margin-top: 18px;
+
+  text-align: center;
+
+  font-size: 16px;
+
+  color: #ddd;
+}
+
+.terms span {
+  color: #ff6fff;
+
+  cursor: pointer;
+}
+
+.login {
+  margin-top: 8px;
+
+  font-size: 16px;
+
+  color: #ddd;
+}
+
+.login span {
+  color: #ff4fff;
+
+  cursor: pointer;
+}

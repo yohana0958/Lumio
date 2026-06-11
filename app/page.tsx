@@ -21,8 +21,12 @@ export default function Home() {
         </nav>
 
         <div className="buttons">
-          <button className="btn-navbar">Criar conta</button>
-          <button className="btn-navbar">Entrar</button>
+          <Link href="/cadastro" className="btn-navbar">Criar conta
+          </Link>
+          <Link href="/login" className="btn-navbar">
+            Entrar
+          </Link>
+
         </div>
 
       </header>
@@ -627,6 +631,9 @@ export default function Home() {
         </div>
         </section>
 
+      {/*CONTATOS IZABELE*/}
+      
+
       {/* FOOTER BEATRIZ */}
       <footer className="bea-footer">
 
@@ -635,7 +642,7 @@ export default function Home() {
           <div className="bea-footer-logo">
 
             <img
-              src="/logolumio.png"
+              src="/logoClara.png"
               alt="Lumio"
               className="bea-footer-img"
             />
