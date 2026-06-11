@@ -25,7 +25,7 @@ export default function PosCadastroY() {
         <nav className="yh-nav-links">
           <a href="/">Início</a>
           <a href="#">Cursos</a>
-          <a href="#">Trilhas</a>
+          <a href="/trilhas">Trilhas</a>
         </nav>
 
         <div className="yh-profile">
@@ -46,7 +46,7 @@ export default function PosCadastroY() {
 
             <h3>Seja bem-vindo de volta,</h3>
 
-            <h1>{nome}! 👋</h1>
+            <h1>{nome}! </h1>
 
             <p>
               Continue sua jornada e evolua suas habilidades todos os dias.
@@ -156,8 +156,124 @@ export default function PosCadastroY() {
           </div>
 
         </section>
+        <section className="yh-projects-section">
 
-        
+  <div className="yh-card-header">
+    <h2>Projetos em andamento</h2>
+    <span>Ver todos</span>
+  </div>
+
+  <div className="yh-projects">
+
+    <div className="yh-project">
+      <img
+        src="https://images.unsplash.com/photo-1555066931-4365d14bab8c"
+        alt="DevTasks"
+      />
+
+      <div className="yh-project-content">
+        <h4>DevTasks</h4>
+        <p>Aplicativo de tarefas.</p>
+      </div>
+    </div>
+
+    <div className="yh-project">
+      <img
+        src="https://images.unsplash.com/photo-1523275335684-37898b6baf30"
+        alt="E-commerce"
+      />
+
+      <div className="yh-project-content">
+        <h4>E-commerce</h4>
+        <p>Loja virtual completa.</p>
+      </div>
+    </div>
+
+    <div className="yh-project">
+      <img
+        src="https://images.unsplash.com/photo-1460925895917-afdab827c52f"
+        alt="Dashboard"
+      />
+
+      <div className="yh-project-content">
+        <h4>Dashboard Analytics</h4>
+        <p>Painel administrativo.</p>
+      </div>
+    </div>
+
+    <div className="yh-project-add">
+      +
+    </div>
+
+  </div>
+
+</section>
+<footer className="bea-footer">
+
+        <div className="bea-footer-container">
+
+          <div className="bea-footer-logo">
+
+            <img
+              src="/logoClara.png"
+              alt="Lumio"
+              className="bea-footer-img"
+            />
+
+            <p>
+              A plataforma que transforma
+              estudantes em profissionais.
+            </p>
+
+          </div>
+
+          <div className="bea-footer-links">
+
+            <div className="bea-footer-coluna">
+
+              <h3>Plataforma</h3>
+
+              <a href="#">Cursos</a>
+              <a href="#">Trilhas</a>
+              <a href="#">Projetos</a>
+              <a href="#">Comunidade</a>
+
+            </div>
+
+            <div className="bea-footer-coluna">
+
+              <h3>Suporte</h3>
+
+              <a href="#">Central de ajuda</a>
+              <a href="#">Contato</a>
+              <a href="#">FAQ</a>
+
+            </div>
+
+            <div className="bea-footer-coluna">
+
+              <h3>Legal</h3>
+
+              <a href="#">Termos de uso</a>
+              <a href="#">Política de privacidade</a>
+              <a href="#">Política de cookies</a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div className="bea-footer-copy">
+
+          <p>
+            Aprenda. Crie. Evolua.
+          </p>
+
+        </div>
+
+      </footer>
+
       </main>
     </>
   );

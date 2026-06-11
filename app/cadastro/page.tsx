@@ -5,6 +5,11 @@ import Link from "next/link";
 export default function Cadastro() {
   return (
     <main className={styles.container}>
+       <Link href="/">
+          <button  type="button">
+            ◀ 
+          </button>
+        </Link>
       <div className={styles.card}>
         
         <Image

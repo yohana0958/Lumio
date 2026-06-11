@@ -1,14 +1,19 @@
 import styles from "./login.module.css";
 
 import Image from "next/image";
-
 import FormInput from "../components/FormInput";
 import Link from "next/link";
 
 export default function Login() {
   return (
     <main className={styles.container}>
+        <Link href="/">
+          <button  type="button">
+            ◀ 
+          </button>
+        </Link>
       <div className={styles.card}>
+
 
         <Image
           src="/logop.png"
@@ -19,7 +24,6 @@ export default function Login() {
         />
 
         <form className={styles.form}>
-
           <FormInput
             label="Email:"
             type="email"
@@ -31,7 +35,6 @@ export default function Login() {
           />
 
           <div className={styles.socialButtons}>
-
             <button
               type="button"
               className={styles.socialButton}
@@ -42,7 +45,6 @@ export default function Login() {
                 width={33}
                 height={28}
               />
-
               <span>Entrar</span>
             </button>
 
@@ -56,24 +58,21 @@ export default function Login() {
                 width={40}
                 height={42}
               />
-
               <span>Entrar</span>
             </button>
-
           </div>
 
           <button
             type="submit"
             className={styles.loginButton}
           >
-            Entrar
+             <Link href="/Trilhas/PosCadastro-Y" >Entrar</Link>
           </button>
-
         </form>
 
         <p className={styles.forgotPassword}>
           Esqueceu a senha?{" "}
-          <Link href="/trilhas">
+          <Link href="/progresso">
             <span>trilhas aqui</span>
           </Link>
           <span>Recupere sua senha aqui.</span>

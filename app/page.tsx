@@ -105,7 +105,7 @@ export default function Home() {
 
           </div>
 
-          <Link href="/Trilhas/PosCadastro-Y" className="cta">
+          <Link href="/login" className="cta">
             COMECE AGORA
             <img src="/arrow.png" alt="arrow" />
           </Link>
