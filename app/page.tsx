@@ -754,6 +754,9 @@ export default function Home() {
 
            </section>
 
+      {/*CONTATOS IZABELE*/}
+      
+
       {/* FOOTER BEATRIZ */}
       <footer className="bea-footer">
 
@@ -762,7 +765,7 @@ export default function Home() {
           <div className="bea-footer-logo">
 
             <img
-              src="/logolumio.png"
+              src="/logoClara.png"
               alt="Lumio"
               className="bea-footer-img"
             />
