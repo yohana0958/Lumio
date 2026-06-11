@@ -1,0 +1,300 @@
+.yh-dashboard-container{
+    min-height:100vh;
+    background:#020c2c;
+    color:white;
+    padding:40px;
+}
+
+/* TOPO */
+
+.yh-dashboard-top{
+    display:flex;
+    justify-content:space-between;
+    gap:50px;
+    flex-wrap:wrap;
+}
+
+.yh-dashboard-welcome{
+    flex:1;
+}
+
+.yh-dashboard-line{
+    width:80px;
+    height:4px;
+    background:#d42bff;
+    margin-bottom:20px;
+}
+
+.yh-dashboard-welcome h3{
+    color:#d1d5db;
+}
+
+.yh-dashboard-welcome h1{
+    font-size:60px;
+    margin:10px 0;
+}
+
+.yh-dashboard-welcome p{
+    color:#cbd5e1;
+    max-width:500px;
+}
+
+.yh-dashboard-btn{
+    margin-top:30px;
+    padding:14px 30px;
+    border:none;
+    border-radius:999px;
+    cursor:pointer;
+    font-weight:600;
+    color:white;
+    background: linear-gradient(
+        90deg,
+        #ff8300 0%,
+        #ff4d6d 50%,
+        #d42bff 100%
+    );
+    transition:.3s;
+}
+.yh-dashboard-btn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 8px 20px rgba(212, 43, 255, .3);
+}
+/* PROGRESSO */
+
+.yh-dashboard-progress{
+    display:flex;
+    align-items:center;
+    gap:30px;
+}
+
+.yh-dashboard-circle{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    border:8px solid #49a7ff;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.yh-dashboard-circle span{
+    font-size:55px;
+    font-weight:bold;
+}
+
+.yh-dashboard-stats{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+/* CARDS */
+
+.yh-card{
+    margin-top:30px;
+    background:#1c2747;
+    border-radius:18px;
+    padding:25px;
+}
+
+.yh-card-header{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:20px;
+}
+
+.yh-card-header span{
+    color:#b84dff;
+    cursor:pointer;
+}
+
+/* CURSO */
+
+.yh-course{
+    display:flex;
+    gap:20px;
+    align-items:center;
+}
+
+.yh-course img{
+    width:220px;
+    height:140px;
+    object-fit:cover;
+    border-radius:12px;
+}
+
+.yh-course-info{
+    flex:1;
+}
+
+.yh-progress-bar{
+    height:8px;
+    background:#334155;
+    border-radius:50px;
+    margin:15px 0;
+}
+
+.yh-progress-fill{
+    width:90%;
+    height:100%;
+    background:#ff8300;
+    border-radius:50px;
+}
+
+.yh-course-actions{
+    display:flex;
+    gap:20px;
+}
+
+.yh-course-actions button{
+    background: transparent;
+    color: #ff8300;
+    border: 2px solid #ff8300;
+    padding: 12px 24px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .3s;
+}
+.yh-course-actions button:hover{
+    background: #ff8300;
+    color: white;
+}
+
+.yh-course-actions a{
+    color:#ff8300;
+    text-decoration:none;
+    font-weight:600;
+    display:flex;
+    align-items:center;
+    height:48px;
+}
+
+/* DESAFIOS */
+
+.yh-challenges{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.yh-challenge{
+    border:1px solid #4b5563;
+    border-radius:15px;
+    padding:20px;
+}
+
+.yh-challenge h3{
+    margin-bottom:10px;
+}
+
+.yh-challenge span{
+    color:#4ade80;
+    font-weight:bold;
+}
+.yh-progress-bar{
+    height:8px;
+    background:#334155;
+    border-radius:50px;
+    overflow:hidden;
+    margin:15px 0;
+}
+
+.yh-progress-fill{
+    width:90%;
+    height:100%;
+    border-radius:50px;
+    background: linear-gradient(
+        90deg,
+        #ff8300 0%,
+        #ff4d6d 50%,
+        #d42bff 100%
+    );
+}
+/* NAVBAR */
+
+.yh-navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 40px;
+    background:linear-gradient(
+        90deg,
+        #d42bff 0%,
+        #c026d3 50%,
+        #a855f7 100%
+    );
+}
+
+.yh-logo img{
+    height:50px;
+    width:auto;
+    display:block;
+}
+.yh-logo span{
+    font-size:28px;
+}
+
+.yh-logo h2{
+    margin:0;
+    color:white;
+    font-size:32px;
+    font-weight:800;
+    letter-spacing:3px;
+}
+
+.yh-nav-links{
+    display:flex;
+    gap:30px;
+}
+
+.yh-nav-links a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.yh-nav-links a:hover{
+    opacity:.8;
+}
+
+.yh-profile{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background:white;
+    color:#a855f7;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:24px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:900px){
+
+    .yh-dashboard-top{
+        flex-direction:column;
+    }
+
+    .yh-course{
+        flex-direction:column;
+    }
+
+    .yh-challenges{
+        grid-template-columns:1fr;
+    }
+
+    .yh-projects{
+        grid-template-columns:1fr;
+    }
+
+    .yh-dashboard-welcome h1{
+        font-size:40px;
+    }
+}
