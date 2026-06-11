@@ -23,7 +23,7 @@ export default function PosCadastroY() {
         </div>
 
         <nav className="yh-nav-links">
-          <a href="#">Início</a>
+          <a href="/">Início</a>
           <a href="#">Cursos</a>
           <a href="#">Trilhas</a>
         </nav>
@@ -157,7 +157,7 @@ export default function PosCadastroY() {
 
         </section>
 
-
+        
       </main>
     </>
   );

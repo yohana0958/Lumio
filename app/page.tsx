@@ -101,26 +101,15 @@ export default function Home() {
 
           </div>
 
-
-          <button className="cta">
+          <Link href="/Trilhas/PosCadastro-Y" className="cta">
             COMECE AGORA
             <img src="/arrow.png" alt="arrow" />
-          </button>
+          </Link>
 
-        </div>
-
-
-        <div className="imagem">
-          <Image
-            src="/foguete.png"
-            alt="foguete"
-            width={350}
-            height={350}
-          />
         </div>
 
       </section>
-
+      
 
       {/* FOOTER */}
       <footer className="footer">
@@ -398,6 +387,7 @@ export default function Home() {
 
 
       {/* PROJETOS MAVY */}
+
       <section className="mavy-projetos-section">
 
         <h2 className="mavy-projetos-title">
@@ -573,182 +563,69 @@ export default function Home() {
         </div>
 
       </section>
+      <section className="contatos-mavy-container">
+        <div className="contatos-mavy-content">
 
- <section className="mavy-projetos-section">
+          <div className="contatos-mavy-left">
 
-        <h2 className="mavy-projetos-title">
-          Projetos que Geram Resultados
-        </h2>
+            <h1>
+              Seu melhor futuro é <span>Lumio!</span>
+            </h1>
 
-        <p className="mavy-projetos-subtitle">
-          Projetos reais desenvolvidos para colocar em prática
-          os conhecimentos adquiridos.
-        </p>
+            <p>
+              Entre em contato conosco para tirar dúvidas,
+              solicitar informações ou conhecer melhor
+              nossos serviços. Nossa equipe está pronta
+              para atender você da melhor forma possível.
+            </p>
 
-        <div className="mavy-projetos-grid">
+            <form className="contatos-mavy-form">
 
-          {/* CARD 1 */}
-          <div className="mavy-projeto-card">
+              <input
+                type="text"
+                placeholder="Lumio Soluções Digitais LTDA"
+              />
 
-            <Image
-              src="/projeto1.png"
-              alt="Landing Page"
-              width={300}
-              height={180}
-              className="mavy-projeto-imagem"
-            />
+              <input
+                type="email"
+                placeholder="lumio@gmail.com"
+              />
 
-            <div className="mavy-projeto-conteudo">
+              <input
+                type="text"
+                placeholder="Tel: +55 (00) 1111-2222"
+              />
 
-              <span className="mavy-projeto-categoria">
-                Front-End
-              </span>
+              <input
+                type="text"
+                placeholder="SAC: 0800 222 3333"
+              />
 
-              <h3 className="mavy-projeto-titulo">
-                Landing Page Moderna
-              </h3>
+              <button type="button">
+                Contacte-nos
+              </button>
 
-              <div className="mavy-projeto-rodape">
+            </form>
 
-                <span className="mavy-projeto-link">
-                  Ver projeto
-                </span>
+            <h4>
+              já tem uma conta? <span>entrar</span>
+            </h4>
 
-                <Image
-                  src="/arrow.png"
-                  alt="seta"
-                  width={20}
-                  height={20}
-                  className="mavy-projeto-seta"
-                />
-
-              </div>
-            </div>
           </div>
 
-
-          {/* CARD 2 */}
-          <div className="mavy-projeto-card">
+          <div className="contatos-mavy-right">
 
             <Image
-              src="/projeto2.png"
-              alt="Dashboard"
-              width={300}
-              height={180}
-              className="mavy-projeto-imagem"
+              src="/Notbook.png"
+              alt="Notebook"
+              width={700}
+              height={500}
             />
 
-            <div className="mavy-projeto-conteudo">
-
-              <span className="mavy-projeto-categoria">
-                UI Design
-              </span>
-
-              <h3 className="mavy-projeto-titulo">
-                Plataforma de Organização
-              </h3>
-
-              <div className="mavy-projeto-rodape">
-
-                <span className="mavy-projeto-link">
-                  Ver projeto
-                </span>
-
-                <Image
-                  src="/arrow.png"
-                  alt="seta"
-                  width={20}
-                  height={20}
-                  className="mavy-projeto-seta"
-                />
-
-              </div>
-            </div>
-          </div>
-
-
-          {/* CARD 3 */}
-          <div className="mavy-projeto-card">
-
-            <Image
-              src="/projeto3.png"
-              alt="Sistema"
-              width={300}
-              height={180}
-              className="mavy-projeto-imagem"
-            />
-
-            <div className="mavy-projeto-conteudo">
-
-              <span className="mavy-projeto-categoria">
-                Back-End
-              </span>
-
-              <h3 className="mavy-projeto-titulo">
-                Sistema Inteligente
-              </h3>
-
-              <div className="mavy-projeto-rodape">
-
-                <span className="mavy-projeto-link">
-                  Ver projeto
-                </span>
-
-                <Image
-                  src="/arrow.png"
-                  alt="seta"
-                  width={20}
-                  height={20}
-                  className="mavy-projeto-seta"
-                />
-
-              </div>
-            </div>
-          </div>
-
-
-          {/* CARD 4 */}
-          <div className="mavy-projeto-card">
-
-            <Image
-              src="/projeto4.png"
-              alt="Delivery"
-              width={300}
-              height={180}
-              className="mavy-projeto-imagem"
-            />
-
-            <div className="mavy-projeto-conteudo">
-
-              <span className="mavy-projeto-categoria">
-                Full Stack
-              </span>
-
-              <h3 className="mavy-projeto-titulo">
-                Plataforma de Delivery
-              </h3>
-
-              <div className="mavy-projeto-rodape">
-
-                <span className="mavy-projeto-link">
-                  Ver projeto
-                </span>
-
-                <Image
-                  src="/arrow.png"
-                  alt="seta"
-                  width={20}
-                  height={20}
-                  className="mavy-projeto-seta"
-                />
-
-              </div>
-            </div>
           </div>
 
         </div>
-
-           </section>
+        </section>
 
       {/* FOOTER BEATRIZ */}
       <footer className="bea-footer">
